@@ -1,3 +1,4 @@
+/* basic / issue */
 .color1{
   border-left: 3px solid red;
 }
@@ -86,13 +87,23 @@
   color: #e3e3e3;
 }
 
+/* modals */
+.btn-secondary{
+  border-radius: 0;
+}
+
+.btn-secondary:hover{
+  background: transparent;
+  border: 1px solid #2E484C;
+  color: #2E484C;
+}
 
 /* responsive */
 /* extra small */
 @media all and (max-width: 576px) {
 	.header .name{
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 32px;
   }
   
   .header #typed, .typed-cursor{
@@ -108,7 +119,7 @@
 @media all and (min-width: 576px) {
   .header .name{
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 32px;
   }
   
   .header #typed, .typed-cursor{
