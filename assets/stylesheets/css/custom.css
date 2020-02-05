@@ -59,6 +59,7 @@ p.lead {
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
+  transition: 0.4s ease-in-out all;
 }
 
 .social-icons a:last-child {
@@ -67,6 +68,7 @@ p.lead {
 
 .social-icons a:hover {
   background-color: #BD5D38;
+  transform: scale(1.3) translate(-7px, 6px);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -100,14 +102,25 @@ p.lead {
     margin: auto auto 0;
     padding: 0.5rem;
   }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 13rem;
-    max-height: 13rem;
+  .img-profile {
+    height: 12rem;
+    width: 12rem;
+    transition: 0.4s ease-in-out all;
   }
-  #sideNav .navbar-brand .img-profile:hover {
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.534);
-    transition: 0.4s linear all;
+  .img-profile:hover {
+    box-shadow: 0px 0px 50px 10px rgba(33,33,33,.2); 
+    transition: 0.4s ease-in-out all;
+    transform: translate(0px, -10px);
   }
+
+  .first-name{
+    transition: 0.4s ease-in-out all;
+  }
+
+  .first-name:hover{
+    transform: translate(0px, -10px);
+  }
+
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
@@ -132,6 +145,14 @@ section.portfolio-section {
   max-width: 95rem;
 }
 
+section.portfolio-section h2{
+  transition: 0.4s ease-in-out all;
+}
+
+section.portfolio-section h2:hover{
+  transform: translate(0px, 10px);
+}
+
 section.portfolio-section .resume-item .resume-date {
   min-width: none;
 }
@@ -152,9 +173,9 @@ section.portfolio-section .resume-item .resume-date {
 }
 
 a {
-  color: #BD5D38;
+  color: rgb(179, 116, 91);
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #BD5D38;
 }
